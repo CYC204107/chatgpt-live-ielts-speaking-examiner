@@ -1,0 +1,4 @@
+interface:
+  display_name: "IELTS Speaking Examiner"
+  short_description: "Run realistic IELTS speaking mocks and score them"
+  default_prompt: "Use $ielts-speaking-examiner to run a full IELTS Speaking mock test and score my performance."
