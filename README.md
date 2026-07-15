@@ -76,3 +76,84 @@ $ielts-speaking-examiner 开始一场完整的雅思口语模拟考试。
 ## License
 
 No license is currently granted for redistribution. All rights are reserved unless explicitly stated otherwise.
+
+---
+
+# English Version
+
+IELTS Speaking Examiner is a reusable Codex skill for realistic IELTS Speaking mock tests. It manages the introduction and identity check, Part 1, Part 2, Part 3, and the final score report while prioritizing the question banks included with the skill.
+
+> This project is intended for practice and estimated assessment only. It does not provide an official IELTS score and is not affiliated with IELTS, the British Council, IDP, or Cambridge.
+
+## Features
+
+- Simulates the complete three-part IELTS Speaking test
+- Asks one examiner question at a time
+- Maintains a natural, professional, and neutral examiner style
+- Keeps each Part 2 cue card linked to its corresponding Part 3 question set
+- Provides no correction, coaching, or scoring before the test ends
+- Gives an evidence-based estimated score and improvement advice
+- Never invents pronunciation evidence in text-only sessions
+
+## Repository Structure
+
+```text
+ielts-speaking-examiner/
+├─ SKILL.md
+├─ agents/
+│  └─ openai.yaml
+└─ references/
+   ├─ exam-protocol.md
+   ├─ question-bank-part-1.md
+   ├─ question-bank-part-2.md
+   ├─ question-bank-part-3.md
+   └─ scoring-and-feedback.md
+```
+
+## Installation
+
+This is a private repository, so it can only be cloned by the owner or authorized collaborators.
+
+Run the following command in Windows PowerShell after signing in with GitHub CLI:
+
+```powershell
+git clone https://github.com/CYC204107/ielts-speaking-examiner.git "$HOME\.codex\skills\ielts-speaking-examiner"
+```
+
+If your Codex setup uses a different personal skills directory, copy the entire repository into that directory, then restart Codex or begin a new task.
+
+## Usage
+
+Ask Codex directly:
+
+```text
+Use IELTS Speaking Examiner to conduct a complete IELTS Speaking mock test for me.
+```
+
+You can also invoke the skill explicitly:
+
+```text
+$ielts-speaking-examiner Start a complete IELTS Speaking mock test.
+```
+
+Answer each question as the examiner presents it. After the full test ends, the skill provides estimated results for:
+
+1. Fluency and Coherence
+2. Lexical Resource
+3. Grammatical Range and Accuracy
+4. Pronunciation
+
+## Recommendations
+
+- Voice input provides a more realistic speaking-test experience.
+- In text-only mode, any pronunciation result must remain provisional.
+- During a strict mock test, avoid requesting corrections or model answers before the test ends.
+- When restarting within the same task, ask the examiner to avoid topics already used.
+
+## Content Notice
+
+The question banks and reference materials are provided for personal study and mock-exam practice. Do not publicly redistribute copyrighted material without the necessary rights or permission. Keeping this repository private is recommended.
+
+## License
+
+No license is currently granted for redistribution. All rights are reserved unless explicitly stated otherwise.
