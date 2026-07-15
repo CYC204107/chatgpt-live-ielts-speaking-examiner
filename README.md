@@ -1,8 +1,10 @@
-# IELTS Speaking Examiner
+# ChatGPT Live IELTS Speaking Examiner
 
-一个用于 Codex 的 IELTS Speaking 模拟考试 Skill。它按照完整的口语考试流程组织身份确认、Part 1、Part 2、Part 3 以及考后评分，并优先使用随 Skill 提供的题库。
+一个面向 ChatGPT 实时口语练习的 IELTS Speaking Examiner 项目，以 Codex Skill 格式组织。它按照完整的口语考试流程进行身份确认、Part 1、Part 2、Part 3 以及考后评分，并优先使用随 Skill 提供的题库。
 
 > 本项目提供的是练习与能力评估，不代表官方 IELTS 成绩，也不隶属于 IELTS、British Council、IDP 或 Cambridge。
+
+> 仓库采用 Codex Skill 文件结构。ChatGPT 网页版不能直接安装 `SKILL.md`，需要通过自定义 GPT 的 Instructions 和 Knowledge 功能进行配置。
 
 ## 主要功能
 
@@ -17,7 +19,7 @@
 ## 目录结构
 
 ```text
-ielts-speaking-examiner/
+chatgpt-live-ielts-speaking-examiner/
 ├─ SKILL.md
 ├─ agents/
 │  └─ openai.yaml
@@ -36,7 +38,7 @@ ielts-speaking-examiner/
 在已经登录 GitHub CLI 的 Windows PowerShell 中运行：
 
 ```powershell
-git clone https://github.com/CYC204107/ielts-speaking-examiner.git "$HOME\.codex\skills\ielts-speaking-examiner"
+git clone https://github.com/CYC204107/chatgpt-live-ielts-speaking-examiner.git "$HOME\.codex\skills\ielts-speaking-examiner"
 ```
 
 如果你的 Codex 使用其他个人 Skill 目录，请将整个仓库复制到对应目录，并重新启动 Codex 或开始一个新任务。
@@ -81,9 +83,11 @@ No license is currently granted for redistribution. All rights are reserved unle
 
 # English Version
 
-IELTS Speaking Examiner is a reusable Codex skill for realistic IELTS Speaking mock tests. It manages the introduction and identity check, Part 1, Part 2, Part 3, and the final score report while prioritizing the question banks included with the skill.
+ChatGPT Live IELTS Speaking Examiner is an IELTS Speaking practice project designed for live ChatGPT-style interaction and organized in the Codex Skill format. It manages the introduction and identity check, Part 1, Part 2, Part 3, and the final score report while prioritizing the included question banks.
 
 > This project is intended for practice and estimated assessment only. It does not provide an official IELTS score and is not affiliated with IELTS, the British Council, IDP, or Cambridge.
+
+> This repository uses the Codex Skill file structure. ChatGPT on the web cannot install `SKILL.md` directly; use the custom GPT Instructions and Knowledge features instead.
 
 ## Features
 
@@ -98,7 +102,7 @@ IELTS Speaking Examiner is a reusable Codex skill for realistic IELTS Speaking m
 ## Repository Structure
 
 ```text
-ielts-speaking-examiner/
+chatgpt-live-ielts-speaking-examiner/
 ├─ SKILL.md
 ├─ agents/
 │  └─ openai.yaml
@@ -117,7 +121,7 @@ This is a private repository, so it can only be cloned by the owner or authorize
 Run the following command in Windows PowerShell after signing in with GitHub CLI:
 
 ```powershell
-git clone https://github.com/CYC204107/ielts-speaking-examiner.git "$HOME\.codex\skills\ielts-speaking-examiner"
+git clone https://github.com/CYC204107/chatgpt-live-ielts-speaking-examiner.git "$HOME\.codex\skills\ielts-speaking-examiner"
 ```
 
 If your Codex setup uses a different personal skills directory, copy the entire repository into that directory, then restart Codex or begin a new task.
