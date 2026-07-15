@@ -1,5 +1,129 @@
 # ChatGPT Live IELTS Speaking Examiner
 
+
+An IELTS Speaking mock-exam project designed for the **ChatGPT app, custom GPTs, and voice mode**.
+
+It guides candidates through the identity check, Part 1, Part 2, Part 3, and a post-test score report while using the included question banks to deliver a realistic IELTS Speaking practice experience.
+
+> This repository is public and may be viewed, downloaded, or cloned by anyone. It is intended for practice and estimated assessment only. It does not provide an official IELTS score and is not affiliated with IELTS, the British Council, IDP, or Cambridge.
+
+## Features
+
+- Simulates the complete three-part IELTS Speaking test
+- Proactively manages the test and asks one question at a time
+- Uses a natural, professional, and neutral examiner style
+- Keeps each Part 2 cue card linked to its matching Part 3 set
+- Provides no correction, coaching, or scoring before the test ends
+- Redirects clearly irrelevant answers without breaking the test flow
+- Provides evidence-based estimated bands and improvement advice
+- Supports both text conversations and ChatGPT voice mode
+- Never invents pronunciation evidence in text-only sessions
+
+## Use with the ChatGPT App
+
+This GitHub repository does not install itself into ChatGPT. Configure it through ChatGPT's custom GPT builder.
+
+### 1. Download
+
+[Download ZIP](https://github.com/CYC204107/chatgpt-live-ielts-speaking-examiner/archive/refs/heads/main.zip)
+
+Or clone the repository:
+
+```bash
+git clone https://github.com/CYC204107/chatgpt-live-ielts-speaking-examiner.git
+```
+
+### 2. Create a Custom GPT
+
+1. Sign in to ChatGPT.
+2. Open Explore GPTs or My GPTs.
+3. Select Create.
+4. Open the Configure page.
+5. Add a name, icon, description, and conversation starter.
+
+Suggested name:
+
+```text
+IELTS Speaking Examiner
+```
+
+Suggested conversation starter:
+
+```text
+Start a complete IELTS Speaking mock test.
+```
+
+### 3. Configure Instructions
+
+Adapt the examiner role, test procedure, and scoring rules from `SKILL.md` and place them in the custom GPT **Instructions** field. The instructions should require the examiner to:
+
+- Start and manage the test proactively
+- Follow Part 1, Part 2, and Part 3 in order
+- Ask one question at a time
+- Use formal questions only from the corresponding banks
+- Give no correction or score before the full test ends
+- Provide professional assessment and advice after the formal ending
+
+### 4. Upload Knowledge
+
+Upload these files to the custom GPT **Knowledge** section:
+
+```text
+references/exam-protocol.md
+references/question-bank-part-1.md
+references/question-bank-part-2.md
+references/question-bank-part-3.md
+references/scoring-and-feedback.md
+```
+
+`agents/openai.yaml` contains optional project metadata and is not required when configuring a custom GPT.
+
+### 5. Test and Use
+
+Save the GPT and complete a preview test. Confirm that the identity check, transitions, question-bank selection, and final assessment work correctly before regular use.
+
+For a more realistic speaking experience, open the custom GPT in the ChatGPT app and answer through voice mode.
+
+## Assessment Criteria
+
+After the complete test, the examiner provides estimated results for:
+
+1. Fluency and Coherence
+2. Lexical Resource
+3. Grammatical Range and Accuracy
+4. Pronunciation
+
+In text-only sessions, Pronunciation must remain provisional and should not be presented as a reliable official-style pronunciation score.
+
+## Repository Structure
+
+```text
+chatgpt-live-ielts-speaking-examiner/
+├─ SKILL.md
+├─ agents/
+│  └─ openai.yaml
+└─ references/
+   ├─ exam-protocol.md
+   ├─ question-bank-part-1.md
+   ├─ question-bank-part-2.md
+   ├─ question-bank-part-3.md
+   └─ scoring-and-feedback.md
+```
+
+## Recommendations
+
+- During a strict mock test, do not request model answers, translation, or correction before the test ends.
+- Voice mode provides a more realistic speaking-test experience.
+- When starting another test, ask the examiner to avoid recently used topics.
+- Test Knowledge retrieval before sharing the custom GPT publicly.
+- Never submit real identity-document numbers, addresses, or other sensitive information during the simulated identity check.
+
+## Public Use and Content Notice
+
+This repository is publicly available for download and study. Public availability does not override copyright or usage restrictions that may apply to question-bank materials, images, trademarks, or other third-party content. Copy, modify, and redistribute material only when you have the necessary rights or permission.
+
+If you publish a custom GPT based on this project, follow OpenAI's applicable product rules, content policies, and sharing requirements.
+
 一个面向 **ChatGPT 应用、自定义 GPT 和语音模式** 的雅思口语模拟考试项目。
 
 它可以引导考生完成身份确认、Part 1、Part 2、Part 3 和考后评分，并通过随项目提供的题库进行接近真实流程的 IELTS Speaking 模拟练习。
@@ -127,127 +251,4 @@ chatgpt-live-ielts-speaking-examiner/
 
 ---
 
-# English Version
 
-An IELTS Speaking mock-exam project designed for the **ChatGPT app, custom GPTs, and voice mode**.
-
-It guides candidates through the identity check, Part 1, Part 2, Part 3, and a post-test score report while using the included question banks to deliver a realistic IELTS Speaking practice experience.
-
-> This repository is public and may be viewed, downloaded, or cloned by anyone. It is intended for practice and estimated assessment only. It does not provide an official IELTS score and is not affiliated with IELTS, the British Council, IDP, or Cambridge.
-
-## Features
-
-- Simulates the complete three-part IELTS Speaking test
-- Proactively manages the test and asks one question at a time
-- Uses a natural, professional, and neutral examiner style
-- Keeps each Part 2 cue card linked to its matching Part 3 set
-- Provides no correction, coaching, or scoring before the test ends
-- Redirects clearly irrelevant answers without breaking the test flow
-- Provides evidence-based estimated bands and improvement advice
-- Supports both text conversations and ChatGPT voice mode
-- Never invents pronunciation evidence in text-only sessions
-
-## Use with the ChatGPT App
-
-This GitHub repository does not install itself into ChatGPT. Configure it through ChatGPT's custom GPT builder.
-
-### 1. Download
-
-[Download ZIP](https://github.com/CYC204107/chatgpt-live-ielts-speaking-examiner/archive/refs/heads/main.zip)
-
-Or clone the repository:
-
-```bash
-git clone https://github.com/CYC204107/chatgpt-live-ielts-speaking-examiner.git
-```
-
-### 2. Create a Custom GPT
-
-1. Sign in to ChatGPT.
-2. Open Explore GPTs or My GPTs.
-3. Select Create.
-4. Open the Configure page.
-5. Add a name, icon, description, and conversation starter.
-
-Suggested name:
-
-```text
-IELTS Speaking Examiner
-```
-
-Suggested conversation starter:
-
-```text
-Start a complete IELTS Speaking mock test.
-```
-
-### 3. Configure Instructions
-
-Adapt the examiner role, test procedure, and scoring rules from `SKILL.md` and place them in the custom GPT **Instructions** field. The instructions should require the examiner to:
-
-- Start and manage the test proactively
-- Follow Part 1, Part 2, and Part 3 in order
-- Ask one question at a time
-- Use formal questions only from the corresponding banks
-- Give no correction or score before the full test ends
-- Provide professional assessment and advice after the formal ending
-
-### 4. Upload Knowledge
-
-Upload these files to the custom GPT **Knowledge** section:
-
-```text
-references/exam-protocol.md
-references/question-bank-part-1.md
-references/question-bank-part-2.md
-references/question-bank-part-3.md
-references/scoring-and-feedback.md
-```
-
-`agents/openai.yaml` contains optional project metadata and is not required when configuring a custom GPT.
-
-### 5. Test and Use
-
-Save the GPT and complete a preview test. Confirm that the identity check, transitions, question-bank selection, and final assessment work correctly before regular use.
-
-For a more realistic speaking experience, open the custom GPT in the ChatGPT app and answer through voice mode.
-
-## Assessment Criteria
-
-After the complete test, the examiner provides estimated results for:
-
-1. Fluency and Coherence
-2. Lexical Resource
-3. Grammatical Range and Accuracy
-4. Pronunciation
-
-In text-only sessions, Pronunciation must remain provisional and should not be presented as a reliable official-style pronunciation score.
-
-## Repository Structure
-
-```text
-chatgpt-live-ielts-speaking-examiner/
-├─ SKILL.md
-├─ agents/
-│  └─ openai.yaml
-└─ references/
-   ├─ exam-protocol.md
-   ├─ question-bank-part-1.md
-   ├─ question-bank-part-2.md
-   ├─ question-bank-part-3.md
-   └─ scoring-and-feedback.md
-```
-
-## Recommendations
-
-- During a strict mock test, do not request model answers, translation, or correction before the test ends.
-- Voice mode provides a more realistic speaking-test experience.
-- When starting another test, ask the examiner to avoid recently used topics.
-- Test Knowledge retrieval before sharing the custom GPT publicly.
-- Never submit real identity-document numbers, addresses, or other sensitive information during the simulated identity check.
-
-## Public Use and Content Notice
-
-This repository is publicly available for download and study. Public availability does not override copyright or usage restrictions that may apply to question-bank materials, images, trademarks, or other third-party content. Copy, modify, and redistribute material only when you have the necessary rights or permission.
-
-If you publish a custom GPT based on this project, follow OpenAI's applicable product rules, content policies, and sharing requirements.
